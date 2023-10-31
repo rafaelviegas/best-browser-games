@@ -2,10 +2,10 @@
   "name": "best-browser-games-api",
   "version": "1.0.0",
   "description": "",
-  "main": "./bin/server.js",
+  "main": "./api/index.js",
   "scripts": {
-    "start": "node ./bin/server.js",
-    "dev": "nodemon ./bin/server.js"
+    "start": "node ./api/index.js",
+    "dev": "nodemon ./api/index.js"
   },
   "keywords": [],
   "author": "",
