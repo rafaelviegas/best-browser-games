@@ -40,7 +40,7 @@ const userRoute = require('./routes/user-route');
 const ratingRoute = require('./routes/rating-route');
 const CSS_URL = "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.1.0/swagger-ui.min.css";
 
-app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs, { customCssUrl: CSS_URL })));
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs, { customCssUrl: CSS_URL }));
 app.use('/games', gameRoute);
 app.use('/categories', categoryRoute);
 app.use('/users', userRoute);
