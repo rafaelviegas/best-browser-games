@@ -12,6 +12,7 @@ const postGame = require('./post.game.swagger');
 const putGame = require('./put.game.swagger');
 const deleteGame = require('./delete.game.swagger');
 
+const getUserById = require('./get.user.swagger.js');
 const postUser = require('./post.user.swagger');
 const putUser = require('./put.user.swagger');
 const loginUser = require('./login.user.swagger');
@@ -82,6 +83,9 @@ module.exports = {
         "/games/{gameId}  ": {
             "delete": deleteGame
         },
+        "/users/{userId}": {
+            "get": getUserById
+        },        
         "/users": {
             "post": postUser
         },
