@@ -3,6 +3,20 @@ module.exports = {
     tags: ['Games'],
     description: "Retorna listagem de games cadastrados",
     operationId: 'getGames',
+    parameters: [
+        {
+            "name": "categoryId",
+            "in": "query",
+            "description": "Obter um game pelo ID da categoria",
+            "required": false
+        },
+        {
+            "name": "name",
+            "in": "query",
+            "description": "Obter um game pelo nome ou parte dele",
+            "required": false
+        }        
+    ],
     responses: {
         "200": {          
             description: "Listagem de games.",
