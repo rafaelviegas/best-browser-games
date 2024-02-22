@@ -21,6 +21,7 @@ const getRatingById = require('./get.rating.swagger');
 const postRating = require('./post.rating.swagger');
 const putRating = require('./put.rating.swagger');
 const getRatingsByGameId = require('./get.game.ratings.swagger');
+const getUserRecommendationsByUserId = require('./get.user.recommendation.swagger.js');
 
 module.exports = {
     openapi: "3.0.3",
@@ -94,6 +95,9 @@ module.exports = {
         },
         "/users/login": {
             "post": loginUser
+        },
+        "/users/{userId}/recommendations ": {
+            "get": getUserRecommendationsByUserId 
         },
         "/ratings/{ratingId}": {
             "get": getRatingById
